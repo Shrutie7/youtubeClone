@@ -12,7 +12,7 @@ import { cacheResults } from "../utils/searchSlice";
 
 const Head = () => {
   const cache = useSelector((store) => store.search);
-  console.log(cache);
+
   const [searchQuery, setsearchQuery] = useState();
   const [suggestions, setsuggestions] = useState([]);
   const [showsuggestions, setshowsuggestions] = useState(false);
@@ -51,7 +51,7 @@ hence we setsuggestions to this ["iphone11","iphone12"]
 
   const dispatch = useDispatch();
   const getsearchSuggestion = async () => {
-    console.log("API CALL -", searchQuery);
+    // console.log("API CALL -", searchQuery);
     const data = await fetch(YOUTUBE_SEARCH_API + searchQuery);
     const json = await data.json();
     setsuggestions(json[1]);

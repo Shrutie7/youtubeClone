@@ -8,6 +8,7 @@ import { toggleMenu } from './utils/appSlice';
 import {createBrowserRouter,RouterProvider} from "react-router-dom";
 import MainContainer from './components/MainContainer';
 import WatchPage from './components/WatchPage';
+import Demo from './components/Demo';
 function App() {
 
 const appRouter = createBrowserRouter([
@@ -24,11 +25,12 @@ children:[
     path:"/watch",
     element:<WatchPage/>
 
-  }
-]
   },
   {
-
+    path:"/demo",
+    element:<Demo/>
+  }
+]
   }
 ])
 
