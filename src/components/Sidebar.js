@@ -31,6 +31,7 @@ const open = useSelector((e)=>e.app.isMenuOpen);
 
    
       <div><Link to ={"/"}><img src={home} className="h-8"/><div className="text-xs">Home</div></Link></div>
+      <div><Link to ={"/demo"}><img src={home} className="h-8"/><div className="text-xs">Demo</div></Link></div>
       <div><img src={subscribe} className="h-8"/><div className="text-xs -ml-4">Subscriptions</div></div>
       <div><img src={shorts} className="h-8"/><div className="text-xs">Shorts</div></div>
       <div><img src={you} className="h-8"/><div className="text-xs text-center -ml-2">You</div></div>

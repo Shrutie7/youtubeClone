@@ -4,6 +4,10 @@ export const data =  [
         "icon":"../icons/home.png"
     },
     {
+        "title":"Demo",
+        "icon":"../icons/home.png"
+    },
+    {
         "title":"Shorts",
         "icon":"../icons/home.png"
     },

@@ -26,7 +26,7 @@ const searchSlice = createSlice({
 
 // use this or do return when you r merging 2 objects 
 // state = Object.assign(state,action.payload)
-console.log(current(state)); // use current bcoz state variable is a proxy object not your actual state current comes from immer package ->dependency of Redux toolkit
+//console.log(current(state)); // use current bcoz state variable is a proxy object not your actual state current comes from immer package ->dependency of Redux toolkit
 
 return {
     ...state,...action.payload,
